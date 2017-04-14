@@ -1,10 +1,6 @@
 sudo wget https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.0~ce-0~ubuntu-trusty_amd64.deb
 sudo dpkg -i docker-ce_17.03.0-ce-0~ubuntu-trusty_amd64.deb
-sudo tee /etc/docker/daemon.json <<-'EOF'
-{
-  "registry-mirrors": ["https://ae6kri8o.mirror.aliyuncs.com"]
-}
-EOF
+
 
 
 #sudo docker swarm join-token worker|awk 'NR>2{print$0}' >>/opt/worker.sh
